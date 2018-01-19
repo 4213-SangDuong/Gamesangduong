@@ -2,6 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/Ky7/Game/SangDuong/src/States/GameState.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Mains/Handler.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Managers/ClickListener.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/States/State.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Mains/Game.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Managers/UIManager.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Mains/Display.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/States/GameOverState.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/States/MenuState.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/States/SettingsState.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Mains/GameCamera.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Mains/World.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Entities/Boat.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Launcher.java</file>
+            <file>file:/D:/Ky7/Game/SangDuong/src/Managers/KeyManager.java</file>
+        </group>
     </open-files>
 </project-private>
