@@ -20,7 +20,7 @@ public class Assets {
     public static BufferedImage[] player_up,player_down,player_left,player_right,car;
     public static BufferedImage[] play,option,back,addcar;
     private static final int width= 64,height= 64;
-    private static final int cwidth= 1280, cheight= 720;
+    private static final int cwidth= 630, cheight= 564;
     public static void init(){
 //        final String dir = System.getProperty("user.dir");
 //        System.out.println("current dir = " + dir);

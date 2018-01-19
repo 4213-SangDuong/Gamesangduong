@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author Risad
+ * @author Tinhdk
  */
 public class Animation {
     private int speed,index;

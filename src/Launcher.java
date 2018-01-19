@@ -15,7 +15,7 @@ public class Launcher {
     public static void main(String[] args){
 //        final String dir = System.getProperty("user.dir");
 //        System.out.println("current dir = " + dir);
-        Game game = new Game("Game Sang Đường!!!",620,420);
+        Game game = new Game("Game Sang Đường!!!",1280,720);
         game.start();
     }
     

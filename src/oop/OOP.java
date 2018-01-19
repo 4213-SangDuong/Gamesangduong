@@ -25,7 +25,7 @@ import javax.imageio.ImageIO;
 import Entities.CustomCar;
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public class OOP extends Application {
    
@@ -42,7 +42,7 @@ public class OOP extends Application {
          
         Scene scene = new Scene(rootBox, 300, 300);
          
-        primaryStage.setTitle("Add your own car");
+        primaryStage.setTitle("Thêm xe của bạn");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -21,7 +21,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public class GameOverState extends State{
 
@@ -61,7 +61,7 @@ public class GameOverState extends State{
         int fontSize = 50;
         g.setColor(Color.RED);
         g.setFont(new Font("Times New Roman",Font.PLAIN, fontSize));
-        g.drawString("Điểm của bạn là "+Player.getStr(), 150, 100);
+        g.drawString("Your Score is "+Player.getStr(), 150, 100);
     }
     
 }

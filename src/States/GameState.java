@@ -17,7 +17,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author Tính Dk
+ * @author TinhDk
  */
 public class GameState extends State {
     
@@ -25,7 +25,7 @@ public class GameState extends State {
 
     public GameState(Handler handler) {
         super(handler);
-        world = new World(handler, "lib/res/worlds/world1.txt");
+        world = new World(handler, "lib/res/worlds/world1.txt"); // load state từ world1.txt
         handler.setWorld(world);
     }
 
@@ -37,7 +37,7 @@ public class GameState extends State {
     @Override
     public void render(Graphics g) {     
         world.render(g);
-        g.setColor(Color.GREEN);
+        g.setColor(Color.YELLOW);
         int fontSize = 30;
         g.setFont(new Font("Times New Roman",Font.PLAIN, fontSize));
         g.drawString("Score: " + Player.getStr(), 450, 30);

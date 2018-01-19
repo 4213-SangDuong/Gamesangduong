@@ -61,9 +61,9 @@ public class Game implements Runnable {
         this.width=width;
         this.height=height;
         this.title=title;
-        keyManager=new KeyManager();
-        mouseManager=new MouseManager();
-    }
+        keyManager=new KeyManager();// khoi tao keyman
+        mouseManager=new MouseManager();//khoi tao mouse
+    }// load game (tieude,rộng , dài )
     
     private void init(){
         display = new Display(title,width,height);
@@ -76,8 +76,8 @@ public class Game implements Runnable {
         display.getFrame().addMouseMotionListener(mouseManager);
         display.getCanvas().addMouseListener(mouseManager);
         display.getCanvas().addMouseMotionListener(mouseManager);
-        //testimg = ImageLoader.loadImage("/textures/road.png");
-        //sheet = new SpriteSheet(testimg);
+//        testimg = ImageLoader.loadImage("/textures/road.png");
+//        sheet = new SpriteSheet(testimg);
         gameState = new GameState(handler);
         gameoverState = new GameOverState(handler);
         settingsState = new SettingsState(handler);
@@ -159,7 +159,7 @@ public class Game implements Runnable {
     }
     public static boolean isRunning() {
         return running;
-    }
+    }// kiểm tra di chuyển
     
     public synchronized void start(){
         if(running)return;

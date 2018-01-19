@@ -14,7 +14,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public class UIImageButton extends UIObject{
 

@@ -31,27 +31,44 @@ public class World {
     private EntityManager entityManager;
     public World(Handler handler, String path){
         this.handler=handler;
-        entityManager=new EntityManager(handler, new Player(handler,400,500));
+        entityManager=new EntityManager(handler, new Player(handler,640,500));
                 
         //tree start
+        //hàng 1
         entityManager.addEntity(new Tree(handler, 100, 2870));
         entityManager.addEntity(new Tree(handler, 400, 2860));
+        entityManager.addEntity(new Tree(handler, 700, 2870));
+        entityManager.addEntity(new Tree(handler, 1000, 2860));
+        //end hàng 1
         entityManager.addEntity(new Tree(handler, 250, 2480));
         entityManager.addEntity(new Tree(handler, 460, 2480));
         entityManager.addEntity(new Tree(handler, 80, 2480));
+        entityManager.addEntity(new Tree(handler, 710, 2480));
+        entityManager.addEntity(new Tree(handler, 930, 2480));
+        entityManager.addEntity(new Tree(handler, 90, 2480));
+        //end hàng 2
         entityManager.addEntity(new Tree(handler, 120, 2040));
         entityManager.addEntity(new Tree(handler, 20, 2040));
         entityManager.addEntity(new Tree(handler, 420, 2040));
         entityManager.addEntity(new Tree(handler, 520, 2040));
+        entityManager.addEntity(new Tree(handler, 720, 2040));
+        entityManager.addEntity(new Tree(handler, 920, 2040));
+        //end hàng 3
         entityManager.addEntity(new Tree(handler, 140, 1850));
         entityManager.addEntity(new Tree(handler, 290, 1850));
         entityManager.addEntity(new Tree(handler, 440, 1850));
         entityManager.addEntity(new Tree(handler, 540, 1850));
         entityManager.addEntity(new Tree(handler, 40, 1850));
+        entityManager.addEntity(new Tree(handler, 740, 1850));
+        entityManager.addEntity(new Tree(handler, 1040, 1850));
+        //end hàng 4
         entityManager.addEntity(new Tree(handler, 520, 1520));
         entityManager.addEntity(new Tree(handler, 120, 1530));
         entityManager.addEntity(new Tree(handler, 20, 1530));
         entityManager.addEntity(new Tree(handler, 420, 1520));
+        entityManager.addEntity(new Tree(handler, 720, 1520));
+        entityManager.addEntity(new Tree(handler, 820, 1520));
+        //end hàng 5
         entityManager.addEntity(new Tree(handler, 250, 1130));
         entityManager.addEntity(new Tree(handler, 460, 1140));
         entityManager.addEntity(new Tree(handler, 80, 1130));
@@ -62,6 +79,11 @@ public class World {
         entityManager.addEntity(new Tree(handler, 250, 440));
         entityManager.addEntity(new Tree(handler, 460, 450));
         entityManager.addEntity(new Tree(handler, 80, 450));
+        //
+        entityManager.addEntity(new Tree(handler, 640, 250));
+        entityManager.addEntity(new Tree(handler, 440, 250));
+        entityManager.addEntity(new Tree(handler, 940, 250));
+        entityManager.addEntity(new Tree(handler, 80, 250));
         entityManager.addEntity(new Tree(handler, 140, 250));
         entityManager.addEntity(new Tree(handler, 280, 250));
         entityManager.addEntity(new Tree(handler, 440, 250));
@@ -70,7 +92,7 @@ public class World {
         //tree end
         loadWorld(path);
         //Car start
-        if(OOP.getIndx()>=0)
+        if(OOP.getIndx()>=0) // hàng 0
             entityManager.addEntity(new CustomCar(handler, 0, 3050, 128, 68, 2f, 0));
         else 
             entityManager.addEntity(new Car(handler, 0, 3050, 128, 68, 2f, 0));
@@ -110,7 +132,7 @@ public class World {
             entityManager.addEntity(new CustomCar(handler, 400, 2590, 136, 70, 2f, 9));
         else
             entityManager.addEntity(new Car(handler, 400, 2590, 136, 70, 2f, 7));
-        
+        //(handler,x,y,rộng, dài,tốc độ,)
         entityManager.addEntity(new Car(handler, 70, 2200, 132, 78, 2.5f, 10));
         entityManager.addEntity(new Car(handler, 400, 2222, 132, 68, 2.5f, 4));
         entityManager.addEntity(new Car(handler, 70, 2150, 128, 68, 2f, 2));
@@ -120,6 +142,9 @@ public class World {
         entityManager.addEntity(new Car(handler, 70, 1950, 128, 72, 2f, 8));
         entityManager.addEntity(new Car(handler, 380, 1960, 132, 84, 2.5f, 14));
         entityManager.addEntity(new Car(handler, 400, 1820, 132, 68, 2f, 4));
+        entityManager.addEntity(new Car(handler, 400, 1820, 132, 68, 2f, 4));
+        entityManager.addEntity(new Car(handler, 200, 1820, 132, 68, 3f, 4));
+        entityManager.addEntity(new Car(handler, 620, 1820, 132, 68, 3f, 10));
         entityManager.addEntity(new Car(handler, 380, 1845, 116, 68, 2.5f, 12));
         entityManager.addEntity(new Car(handler, 70, 1770, 132, 78, 3f, 10));
         entityManager.addEntity(new Car(handler, 50, 1690, 230, 92, 3f, 11));
@@ -135,6 +160,7 @@ public class World {
         entityManager.addEntity(new Car(handler, 380, 680, 132, 84, 3f, 14));
         entityManager.addEntity(new Car(handler, 65, 680, 128, 68, 3f, 2));
         entityManager.addEntity(new Car(handler, 450, 540, 138, 88, 3f, 3));
+        entityManager.addEntity(new Car(handler, 720, 540, 138, 88, 3f, 6));
         entityManager.addEntity(new Car(handler, 130, 540, 136, 70, 3f, 7));
         entityManager.addEntity(new Car(handler, 0, 380, 128, 68, 3.5f, 0));
         entityManager.addEntity(new Car(handler, 50, 325, 230, 92, 3.5f, 11));
@@ -144,19 +170,26 @@ public class World {
         entityManager.addEntity(new Car(handler, 50, 120, 132, 68, 3.5f, 4));
         entityManager.addEntity(new Car(handler, 200, 75, 138, 88, 3.5f, 1));
         //Car end
+
         //Boat start
         entityManager.addEntity(new Boat(handler, 100, 2877, 128, 68, 1.5f, 1));
         entityManager.addEntity(new Boat(handler, 400, 2877, 128, 68, 1.5f, 1));
+        entityManager.addEntity(new Boat(handler, 700, 2877, 128, 68, 1.5f, 1));
+        entityManager.addEntity(new Boat(handler, 900, 2877, 128, 68, 1.5f, 1));
         entityManager.addEntity(new Boat(handler, 70, 2493, 128, 68, 1.5f, 0));
         entityManager.addEntity(new Boat(handler, 350, 2493, 128, 68, 1.5f, 0));
+        entityManager.addEntity(new Boat(handler, 700, 2493, 128, 68, 1.5f, 0));
         entityManager.addEntity(new Boat(handler, 40, 2364, 128, 68, 1.5f, 1));
         entityManager.addEntity(new Boat(handler, 310, 2364, 128, 68, 1.5f, 1));
+        entityManager.addEntity(new Boat(handler, 720, 2364, 128, 68, 1.5f, 1));
         entityManager.addEntity(new Boat(handler, 70, 1535, 128, 68, 2f, 0));
         entityManager.addEntity(new Boat(handler, 350, 1535, 128, 68, 2f, 0));
+        entityManager.addEntity(new Boat(handler, 700, 1535, 128, 68, 2f, 0));
         entityManager.addEntity(new Boat(handler, 40, 1468, 128, 68, 1.5f, 1));
         entityManager.addEntity(new Boat(handler, 310, 1468, 128, 68, 1.5f, 1));
-        entityManager.addEntity(new Boat(handler, 40, 890, 128, 68, 2.5f, 1));
-        entityManager.addEntity(new Boat(handler, 290, 825, 128, 68, 2f, 1));
+        entityManager.addEntity(new Boat(handler, 720, 1468, 128, 68, 1.5f, 1));
+        entityManager.addEntity(new Boat(handler, 40, 890, 128, 68, 3.5f, 1));
+        entityManager.addEntity(new Boat(handler, 290, 825, 128, 68, 3f, 1));
         entityManager.addEntity(new Boat(handler, 70, 635, 128, 68, 2.5f, 0));
         entityManager.addEntity(new Boat(handler, 290, 445, 128, 68, 2.5f, 1));
         entityManager.addEntity(new Boat(handler, 0, 445, 128, 68, 2.5f, 1));

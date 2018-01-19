@@ -19,7 +19,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author Risad
+ * @author Tinhdk
  */
 public class MenuState extends State{
     

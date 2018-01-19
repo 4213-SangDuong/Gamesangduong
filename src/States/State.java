@@ -12,7 +12,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public abstract class State {
     private static State currentState = null;

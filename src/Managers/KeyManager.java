@@ -12,7 +12,7 @@ import java.awt.event.KeyListener;
 
 /**
  *
- * @author Risad
+ * @author Tinhdk
  */
 public class KeyManager implements KeyListener{
     private boolean[] keys;

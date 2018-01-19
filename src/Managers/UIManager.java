@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Risad
+ * @author Tinhdk
  */
 public class UIManager {
     private Handler handler;

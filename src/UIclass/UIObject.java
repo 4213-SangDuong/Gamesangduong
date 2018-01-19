@@ -13,7 +13,7 @@ import java.awt.event.MouseEvent;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public abstract class UIObject {
     protected float x,y;

@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public class WaterTile extends Tile{
     

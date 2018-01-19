@@ -13,7 +13,7 @@ import java.awt.event.MouseMotionListener;
 
 /**
  *
- * @author Risad
+ * @author TinhDk
  */
 public class MouseManager implements MouseListener, MouseMotionListener{
     

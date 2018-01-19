@@ -8,7 +8,7 @@ package Managers;
 
 /**
  *
- * @author Risad
+ * @author Tinhdk
  */
 public interface ClickListener {
     public void onClick();

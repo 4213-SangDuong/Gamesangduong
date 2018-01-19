@@ -13,7 +13,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author TinhDk
+ * @author Tinhdk
  */
 public class RockTile extends Tile{
     
